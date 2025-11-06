@@ -1,15 +1,20 @@
 import requests
-print(""" ############################################################################ ")
+print("""
+##################################################################################
       
                              Simple Unit Converter                                   
-      
+
+##################################################################################       
       
       Options:
               1. Celsius to Farenheit
               2. Farenheit to Celsius 
               3. Meter to Centimeter
               4. Centimeter to Meter
-              5. USD to ETB ( Real Time ) """)
+              5. USD to ETB ( Real Time ) 
+              
+              
+""")
 
 
 def c2f(x):
@@ -47,7 +52,7 @@ def u2e(x):
     unit = "ETB"
     return calc,unit
 choice = int(input("Plese Enter Your Choice: "))
-unit1 = int(input("Please enter the value: "))
+unit1 = float(input("Please enter the value: "))
 match choice:
     case 1:
         calc,unit = c2f(unit1)
