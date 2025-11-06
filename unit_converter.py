@@ -30,6 +30,7 @@ def m2c(x):
 def c2m(x):
     calc = x/100
     unit = "Meters"
+    return calc,unit
 
 def u2e(x):
     
